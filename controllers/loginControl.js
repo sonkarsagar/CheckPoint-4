@@ -24,5 +24,5 @@ exports.login = async (req, res, next) => {
 };
 
 function generateToken(id) {
-  return jwt.sign({ userId: id }, "chaabi",{expiresIn: '1h'});
+  return jwt.sign({ userId: id },"chaabi" ,{expiresIn: '1h'});
 }
